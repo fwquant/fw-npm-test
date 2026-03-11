@@ -1,6 +1,9 @@
 # fw_npm_test
 一个npm的上传，发布，下载的样例
 
+    设置令牌(记得绕过2FA认证)        
+        npm config set //registry.npmjs.org/:_authToken=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
+    上传              npm publish
 
 
 1、注册账号，https://www.npmjs.com/signup
@@ -11,14 +14,9 @@
 
 
 npmjs 命令:
-初始化：    npm init -y
-设置令牌：   npm config set //registry.npmjs.org/:_authToken=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
-
+    初始化：    npm init -y
     登录:       npm login  --always-auth
-    上传：      npm publish
-
-
 
     清除令牌：   npm config delete //registry.npmjs.org/:_authToken
     查看配置：   npm config list    
-    fw_test20260311/    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
+

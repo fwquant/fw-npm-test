@@ -1,9 +1,10 @@
-// test.js - 本地测试文件
-const myPackage = require('./index');
-
-try {
-    console.log('2 + 3 =', myPackage.add(2, 3)); // 输出5
-    console.log('"2" + 3 =', myPackage.add('2', 3)); // 应该抛出错误
-} catch (e) {
-    console.error('测试失败：', e.message); // 输出"参数必须是数字！"
+// 定义计算工具函数
+function calculateSum_check(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        throw new Error('参数必须为数字');
+    }
+    return a + b;
 }
+
+// 暴露方法
+module.exports = {  calculateSum_check };
