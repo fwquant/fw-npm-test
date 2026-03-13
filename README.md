@@ -33,7 +33,7 @@ npm init -y  # 快速生成默认的 package.json
 ```json
 {
   "name": "fw_npm_test",
-  "version": "1.0.9",  // 按需修改版本号，如 1.0.10、1.1.0 等
+  "version": "1.0.9",  
   "description": "npm 发布测试样例",
   "main": "index.js",
   "scripts": {
