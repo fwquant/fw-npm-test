@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "fw_npm_test": "^1.0.17"
+  }
+}
