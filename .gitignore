@@ -42,3 +42,4 @@ ehthumbs.db
 # 9. TypeScript 编译产物
 *.tsbuildinfo  # TS 编译信息文件
 *.d.ts.map     # 类型映射文件（若不需要）
+/.env
