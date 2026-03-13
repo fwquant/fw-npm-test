@@ -1,1 +1,44 @@
-/.idea/
+# 1. 依赖目录（核心，必加）
+node_modules/
+# 2. IDE/编辑器配置（你提到的 .idea + 其他主流编辑器）
+.idea/
+.vscode/       # VSCode 配置（settings.json、launch.json 等）
+.sublime-*     # Sublime 配置
+.DS_Store      # Mac 系统隐藏文件
+*.swp          # Vim 临时文件
+*.swo          # Vim 临时文件
+# 3. 构建/打包产物（前端/Node.js 打包输出）
+dist/          # Rollup/Vite/Webpack 打包目录
+build/         # 通用构建目录
+lib/           # 编译后的库目录
+out/           # 输出目录（如 TypeScript 编译）
+coverage/      # 测试覆盖率报告（nyc/jest）
+# 4. 日志/临时文件
+*.log          # 所有日志文件
+npm-debug.log* # npm 调试日志
+yarn-debug.log*
+yarn-error.log*
+tmp/           # 临时目录
+temp/          # 临时目录
+# 5. 环境变量/敏感配置（绝不提交到仓库）
+.env           # 本地环境变量
+.env.local     # 本地私有环境变量
+.env.*.local   # 不同环境的私有变量
+.env.prod
+.env.dev
+# 6. 缓存文件
+.npm/          # npm 缓存
+.yarn/         # yarn 缓存
+.pnp.*         # yarn PnP 相关
+.eslintcache   # ESLint 缓存
+.node_repl_history # Node.js REPL 历史
+# 7. 测试/CI 相关（非必要提交）
+.jest/         # Jest 缓存
+.circleci/     # CircleCI 本地配置（若有）
+.github/workflows/*.local.yml # GitHub Actions 本地测试配置
+# 8. 操作系统相关
+Thumbs.db      # Windows 缩略图
+ehthumbs.db
+# 9. TypeScript 编译产物
+*.tsbuildinfo  # TS 编译信息文件
+*.d.ts.map     # 类型映射文件（若不需要）
